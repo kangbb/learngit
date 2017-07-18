@@ -52,11 +52,18 @@ $ git checkout -b <branch-name> origin/<branch-name>	//在本地创建和远程�
 $ git branch --set-upstream <branch-name> origin/<branch-name>	//建立本地分支和远程分支的关联
 
 七、标签管理
-$ git tag <lab>	//打标签
+$ git tag <lab>	//创建标签 <lab>为标签名称
 $ git tag	//查看所有标签
 
 $ git log --pretty=oneline --abbrev-commit	//找到历史提交的commit id
-$ git tag <tab> <commit ID>	//打标签
+$ git tag <tab> <commit ID>	//创建标签
 $ git show <tab>	//查看标签具体信息
 $ git tag -a <tab> -m <"comment"> <commit ID>	//用-a指定标签名，-m指定说明文字
 $ git tag -s <tab> -m <"comment"> <commit ID>	//通过-s用私钥签名一个标签
+
+$ git tag -d <lab>	//删除标签
+$ $ git push origin <lab>	//推送标签
+$ git push origin --tags	//一次性推送全部尚未推送到远程的本地标签
+//标签推送后的删除方式
+$ git tag -d <lab>	//删除本地标签
+$ $ git push origin :refs/tags/<lab>	//删除远程标签
