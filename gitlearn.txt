@@ -31,5 +31,15 @@ $ git push origin master	//后面所有本地库的推送命令 origin为远程�
 $ git clone git@github.com:michaelliao/gitskills.git
 ////例如从远程库https://github.com/michaelliao/gitskills克隆
 
+六、分支管理(在对应仓库目录下运行命令)
+$ git branch	//查看分支
+$ git branch <name>	//创建分支
+$ git checkout <name>	//切换分支
+$ git checkout -b <name>	//创建+切换分支
+$ git merge <name>	//合并某分支到当前分支
+$ git branch -d <name>	//删除分支
+
+
+
 
 
