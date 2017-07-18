@@ -72,3 +72,8 @@ $ $ git push origin :refs/tags/<lab>	//删除远程标签
 $ git config --global alias.<add_name> <std_name>	//配置别名，全部仓库通用
 //别名可在当前用主目录下的.gitconfig文件中找到
 //可使用Git Bash软件，git专用的行命令工具
+
+九、删除仓库
+//在仓库目录下找到.git文件夹，删除
+//退回上层目录，删除该目录
+//删除github上的远程仓库
