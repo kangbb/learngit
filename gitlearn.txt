@@ -59,5 +59,4 @@ $ git log --pretty=oneline --abbrev-commit	//找到历史提交的commit id
 $ git tag <tab> <commit ID>	//打标签
 $ git show <tab>	//查看标签具体信息
 $ git tag -a <tab> -m <"comment"> <commit ID>	//用-a指定标签名，-m指定说明文字
-$ git tag -s <tab> -m <"comment"> <commit ID>	//通过-s用私钥签名一个标签：
-$ git tag -s <tab> -m <"comment"> <commit ID>	//通过-s用私钥签名一个标签：
+$ git tag -s <tab> -m <"comment"> <commit ID>	//通过-s用私钥签名一个标签
