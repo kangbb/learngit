@@ -1,0 +1,35 @@
+//git的一些命令
+一、创建版本库：
+$ mkdir learngit
+$ cd learngit		//创建空目录并打开
+$ git init			//把目录变成Git可以管理的仓库
+
+二、添加文件到Git仓库/更新文件到Git仓库(在对应仓库目录下运行命令)
+$ git add <file>
+$ git commit -m <"extra comment"> #可以先add多个文件，再一次性提交
+
+三、版本退回(在对应仓库目录下运行命令)
+$ git status	//git仓库状态
+$ git diff <file>	//查看文件最近一次做了哪些修改
+$ git diff HEAD -- <file>	//查看工作区和版本库里面最新版本的区别
+$ git checkout -- <file>	//撤销工作区修改
+$ git reset HEAD <file>		//撤销暂存区修改，重新放回工作区
+$ git rm <file>
+$ git commit -m "remove <file>"	//删除文件
+$ git log	//显示从最近到最远的提交日志
+$ git log --pretty=oneline	//减少git log显示的信息
+$ git reset --hard HEAD~1	//退回到上一个版本。HEAD~2,退回到上上个版本。以此类推。
+$ git reset --hard <version ID>	//指定回到某个版本
+
+四、添加远程库(在对应仓库目录下运行命令)
+$ git remote add origin git@github.com:michaelliao/learngit.git 
+//例如链接远程库https://github.com/michaelliao/learngit
+$ git push -u origin master	//首次推送本地库
+$ git push origin master	//后面所有本地库的推送命令 origin为远程库的名字
+
+五、从远程库克隆(在非git仓库目录下运行命令)
+$ git clone git@github.com:michaelliao/gitskills.git
+////例如从远程库https://github.com/michaelliao/gitskills克隆
+
+
+
