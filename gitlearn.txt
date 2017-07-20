@@ -77,3 +77,11 @@ $ git config --global alias.<add_name> <std_name>	//配置别名，全部仓库�
 //在仓库目录下找到.git文件夹，删除
 //退回上层目录，删除该目录
 //删除github上的远程仓库
+
+十、更改远程库
+$ git remote //查看远程库的信息
+$ git remote -v //查看仓库链接
+$ git remote set-url origin URL  //修改url链接
+
+十一、解决冲突
+$ git pull //本地和远程库存在冲突。先抓去，解决冲突后，推送
