@@ -85,3 +85,9 @@ $ git remote set-url origin URL  //修改url链接
 
 十一、解决冲突
 $ git pull //本地和远程库存在冲突。先抓去，解决冲突后，推送
+
+十二、删除远程库文件(夹)
+$ git clone git@github.com:xxx/xxx.git
+$ git rm filename  (或 git rm -r foldername)
+$ git commit -m "Delete some files."
+$ git push origin master
