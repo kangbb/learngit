@@ -91,3 +91,11 @@ $ git clone git@github.com:xxx/xxx.git
 $ git rm filename  (或 git rm -r foldername)
 $ git commit -m "Delete some files."
 $ git push origin master
+
+十三、保持和fork仓库同步
+
+$ git remote add upstream [fork address]
+$ git remote -v //查看添加结果
+$ git fetch upstream
+$ git checkout master
+$ git merge upstream/master
