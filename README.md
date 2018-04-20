@@ -1,2 +1,2 @@
 # learngit
-Some simple command for git.
+Some simple commands for git.
